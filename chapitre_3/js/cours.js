@@ -7,6 +7,31 @@ if (nombre > 0) {
     console.log(nombre + " est nul");
 }
 
+if ((nombre >= 0) && (nombre <= 100)) {
+    console.log(nombre + " est compris entre 0 et 100");
+}
+
+console.log(true && true); // Affiche true
+console.log(true && false); // Affiche false
+console.log(false && true); // Affiche false
+console.log(false && false); // Affiche false
+
+if ((nombre < 0) || (nombre > 100)) {
+    console.log(nombre + " est en dehors de l'intervalle [0, 100]");
+}
+
+console.log(true || true); // Affiche true
+console.log(true || false); // Affiche true
+console.log(false || true); // Affiche true
+console.log(false || false); // Affiche false
+
+if (!(nombre > 100)) {
+    console.log(nombre + " est inférieur ou égal à 100");
+}
+
+console.log(!true); // Affiche false
+console.log(!false); // Affiche true
+
 var meteo = prompt("Quel temps fait-il dehors ?");
 
 if (meteo == "soleil") {
