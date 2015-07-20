@@ -14,8 +14,8 @@ for (var compteur = 1; compteur <= 5; compteur++) {
     console.log(compteur);
 }
 
-/* Boucle infinie !
-var nombre = 1;
+//Boucle infinie!
+/*var nombre = 1;
 while (nombre <= 5) {
     console.log(nombre);
     // La variable n'est plus modifiée : la condition sera toujours vraie
