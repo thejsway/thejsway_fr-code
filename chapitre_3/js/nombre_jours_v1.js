@@ -1,3 +1,7 @@
+/* 
+Exercice : afficher le nombre de jours d'un mois
+*/
+
 var mois = prompt("Entrez le numéro d'un mois :");
 
 // Solution avec des if
