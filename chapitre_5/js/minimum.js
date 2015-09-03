@@ -2,6 +2,7 @@
 Exercice : fonction minimum
 */
 
+// Renvoie le minimum de 2 nombres
 function min(a, b) {
     if (a < b) {
         return a;
