@@ -26,8 +26,14 @@ for (var compteur = 1; compteur <= 5; compteur++) {
     compteur++; // La variable est modifiée dans le corps de la boucle
 }
 
-var lettre;
+var lettre = "";
 while (lettre != "X") {
+    lettre = prompt("Tapez une lettre ou X pour sortir :");
+    console.log(lettre);
+}
+
+lettre = "";
+for (; lettre != "X";) {
     lettre = prompt("Tapez une lettre ou X pour sortir :");
     console.log(lettre);
 }
