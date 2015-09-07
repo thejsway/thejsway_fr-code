@@ -3,7 +3,7 @@ Exercice : fonction calculatrice
 */
 
 // Renvoie le résultat d'un calcul
-function calcul(operandeGauche, operation, operandeDroite) {
+function calculer(operandeGauche, operation, operandeDroite) {
     var resultat;
     switch (operation) {
     case "+":
@@ -22,7 +22,7 @@ function calcul(operandeGauche, operation, operandeDroite) {
     return resultat;
 }
 
-console.log(calcul(4, "+", 6)); // Doit afficher 10
-console.log(calcul(4, "-", 6)); // Doit afficher -2
-console.log(calcul(2, "*", 0)); // Doit afficher 0
-console.log(calcul(12, "/", 0)); // Doit afficher Infinity
+console.log(calculer(4, "+", 6)); // Doit afficher 10
+console.log(calculer(4, "-", 6)); // Doit afficher -2
+console.log(calculer(2, "*", 0)); // Doit afficher 0
+console.log(calculer(12, "/", 0)); // Doit afficher Infinity
