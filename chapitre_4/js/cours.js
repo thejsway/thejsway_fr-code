@@ -27,13 +27,13 @@ for (var compteur = 1; compteur <= 5; compteur++) {
 }
 
 var lettre = "";
-while (lettre != "X") {
+while (lettre !== "X") {
     lettre = prompt("Tapez une lettre ou X pour sortir :");
     console.log(lettre);
 }
 
 lettre = "";
-for (; lettre != "X";) {
+for (; lettre !== "X";) {
     lettre = prompt("Tapez une lettre ou X pour sortir :");
     console.log(lettre);
 }
