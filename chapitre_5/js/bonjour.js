@@ -8,6 +8,6 @@ function bonjour(prenom, nom) {
     return message;
 }
 
-var prenom = prompt("Entrez votre prénom :");
-var nom = prompt("Entrez votre nom :");
-console.log(bonjour(prenom, nom));
+var p = prompt("Entrez votre prénom :");
+var n = prompt("Entrez votre nom :");
+console.log(bonjour(p, n));
