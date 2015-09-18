@@ -2,32 +2,26 @@
 Mini-jeu de rôle avec syntaxe ES5
 */
 
-var Personnage = {
-    nom: "",
-    sante: 0,
-    force: 0,
-
-    initPerso: function (nom, sante, force) {
-        this.nom = nom;
-        this.sante = sante;
-        this.force = force;
-    },
-
-    // Attaque un personnage cible
-    attaquer: function (cible) {
-        if (this.sante > 0) {
-            var degats = this.force;
-            console.log(this.nom + " attaque " + cible.nom + " et lui fait " + degats + " points de dégâts");
-            cible.sante -= degats;
-            if (cible.sante > 0) {
-                console.log(cible.nom + " a encore " + cible.sante + " points de vie");
-            } else {
-                cible.sante = 0;
-                console.log(cible.nom + " est mort !");
-            }
+var Personnage = {};
+Personnage.initPerso = function (nom, sante, force) {
+    this.nom = nom;
+    this.sante = sante;
+    this.force = force;
+};
+// Attaque un personnage cible
+Personnage.attaquer = function (cible) {
+    if (this.sante > 0) {
+        var degats = this.force;
+        console.log(this.nom + " attaque " + cible.nom + " et lui fait " + degats + " points de dégâts");
+        cible.sante -= degats;
+        if (cible.sante > 0) {
+            console.log(cible.nom + " a encore " + cible.sante + " points de vie");
         } else {
-            console.log(this.nom + " ne peut pas attaquer : il est mort...");
+            cible.sante = 0;
+            console.log(cible.nom + " est mort !");
         }
+    } else {
+        console.log(this.nom + " ne peut pas attaquer : il est mort...");
     }
 };
 
