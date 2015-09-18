@@ -1,3 +1,7 @@
+/*
+ Exercice : analyse d'un mot
+*/
+
 function compterNbVoyelles(mot) {
     var nbVoyelles = 0;
     for (var i = 0; i < mot.length; i++) {
