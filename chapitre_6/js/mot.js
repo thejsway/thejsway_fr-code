@@ -2,6 +2,7 @@
  Exercice : analyse d'un mot
 */
 
+// Renvoie le nombre de voyelles d'un mot
 function compterNbVoyelles(mot) {
     var nbVoyelles = 0;
     for (var i = 0; i < mot.length; i++) {
@@ -14,6 +15,7 @@ function compterNbVoyelles(mot) {
     return nbVoyelles;
 }
 
+// Renvoie un mot écrit à l'envers
 function inverser(mot) {
     var motInverse = "";
 
@@ -28,6 +30,46 @@ function inverser(mot) {
     }*/
 
     return motInverse;
+}
+
+// Renvoie un mot converti en "leet speak"
+function convertirEnLeetSpeek(mot) {
+    var motLeet = "";
+    for (var i = 0; i < mot.length; i++) {
+        motLeet = motLeet + trouverLettreLeet(mot[i]);
+    }
+    return motLeet;
+}
+
+// Renvoie l'équivalent "leet speak" d'une lettre
+function trouverLettreLeet(lettre) {
+    // Par défaut, la lettre ne change pas
+    var lettreLeet = lettre;
+    switch (lettre.toLowerCase()) {
+    case "a":
+        lettreLeet = "4";
+        break;
+    case "b":
+        lettreLeet = "8";
+        break;
+    case "e":
+        lettreLeet = "3";
+        break;
+    case "l":
+        lettreLeet = "1";
+        break;
+    case "o":
+        lettreLeet = "0";
+        break;
+    case "s":
+        lettreLeet = "5";
+        break;
+    case "t":
+        lettreLeet = "7";
+        break;
+        // ...
+    }
+    return lettreLeet;
 }
 
 var motSaisi = prompt("Entrez un mot :");
@@ -48,3 +90,6 @@ if (motInverse.toLowerCase() === motSaisi.toLowerCase()) {
 } else {
     console.log("Ce n'est pas un palindrome");
 }
+
+var motLeetSpeak = convertirEnLeetSpeek(motSaisi);
+console.log("Il s'écrit en leet speak " + motLeetSpeak);
