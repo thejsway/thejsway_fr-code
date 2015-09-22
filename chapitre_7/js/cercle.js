@@ -2,8 +2,9 @@
 Exercice : objet cercle
 */
 
+var r = prompt("Entrez le rayon d'un cercle :");
 var cercle = {
-    rayon: 0,
+    rayon: r,
 
     // Renvoie le périmètre du cercle
     perimetre: function () {
@@ -15,7 +16,5 @@ var cercle = {
     }
 };
 
-var r = prompt("Entrez le rayon d'un cercle :");
-cercle.rayon = r;
 console.log("Son périmètre vaut " + cercle.perimetre());
 console.log("Son aire vaut " + cercle.aire());
