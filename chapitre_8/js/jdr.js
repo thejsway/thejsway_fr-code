@@ -1,31 +1,34 @@
 /*
-Mini-jeu de rôle avec syntaxe ES5
+Mini-jeu de rôle
 */
 
-var Personnage = {};
-Personnage.initPerso = function (nom, sante, force) {
-    this.nom = nom;
-    this.sante = sante;
-    this.force = force;
-};
-// Attaque un personnage cible
-Personnage.attaquer = function (cible) {
-    if (this.sante > 0) {
-        var degats = this.force;
-        console.log(this.nom + " attaque " + cible.nom + " et lui fait " + degats + " points de dégâts");
-        cible.sante -= degats;
-        if (cible.sante > 0) {
-            console.log(cible.nom + " a encore " + cible.sante + " points de vie");
+var Personnage = {
+    // Initialise les attributs du personnage
+    initPerso: function (nom, sante, force) {
+        this.nom = nom;
+        this.sante = sante;
+        this.force = force;
+    },
+    // Attaque un personnage cible
+    attaquer: function (cible) {
+        if (this.sante > 0) {
+            var degats = this.force;
+            console.log(this.nom + " attaque " + cible.nom + " et lui fait " + degats + " points de dégâts");
+            cible.sante = cible.sante - degats;
+            if (cible.sante > 0) {
+                console.log(cible.nom + " a encore " + cible.sante + " points de vie");
+            } else {
+                cible.sante = 0;
+                console.log(cible.nom + " est mort !");
+            }
         } else {
-            cible.sante = 0;
-            console.log(cible.nom + " est mort !");
+            console.log(this.nom + " ne peut pas attaquer : il est mort...");
         }
-    } else {
-        console.log(this.nom + " ne peut pas attaquer : il est mort...");
     }
 };
 
 var Joueur = Object.create(Personnage);
+// Initialise les attributs du joueur
 Joueur.initJoueur = function (nom, sante, force) {
     this.initPerso(nom, sante, force);
     this.xp = 0;
@@ -43,9 +46,10 @@ Joueur.combattre = function (pnj) {
             pnj.valeur + " points d'expérience");
         this.xp += pnj.valeur;
     }
-}
+};
 
 var PNJ = Object.create(Personnage);
+// Initialise les attributs du PNJ
 PNJ.initPNJ = function (nom, sante, force, race, valeur) {
     this.initPerso(nom, sante, force);
     this.race = race;
@@ -54,6 +58,7 @@ PNJ.initPNJ = function (nom, sante, force, race, valeur) {
 
 var joueur1 = Object.create(Joueur);
 joueur1.initJoueur("Aurora", 150, 25);
+
 var joueur2 = Object.create(Joueur);
 joueur2.initJoueur("Glacius", 130, 30);
 
