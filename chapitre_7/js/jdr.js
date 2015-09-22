@@ -2,7 +2,7 @@
 Mini-jeu de rôle
 */
 
-var perso1 = {
+var perso = {
     nom: "Aurora",
     sante: 150,
     force: 25,
@@ -16,15 +16,15 @@ var perso1 = {
     }
 };
 
-console.log(perso1.decrire());
+console.log(perso.decrire());
 
 // Aurora est blessée par une flèche
-perso1.sante = perso1.sante - 20;
+perso.sante = perso.sante - 20;
 
 // Aurora trouve un bracelet de force
-perso1.force = perso1.force + 10;
+perso.force = perso.force + 10;
 
 // Aurora apprend une nouvelle compétence
-perso1.xp = perso1.xp + 15;
+perso.xp = perso.xp + 15;
 
-console.log(perso1.decrire());
+console.log(perso.decrire());
