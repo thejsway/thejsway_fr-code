@@ -4,15 +4,19 @@ console.log(3);
 console.log(4);
 console.log(5);
 
+console.log("Début du programme");
 var nombre = 1;
 while (nombre <= 5) {
     console.log(nombre);
     nombre++;
 }
+console.log("Fin du programme");
 
+console.log("Début du programme");
 for (var compteur = 1; compteur <= 5; compteur++) {
     console.log(compteur);
 }
+console.log("Fin du programme");
 
 //Boucle infinie!
 /*var nombre = 1;
