@@ -9,7 +9,7 @@ var chien = {
 
     // Renvoie l'aboiement du chien
     aboyer: function () {
-        return "Grr ! Grr !";
+        return "Grrr ! Grrr !";
     }
 };
 
