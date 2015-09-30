@@ -19,6 +19,19 @@ var Chien = {
     }
 };
 
-var chien1 = Object.create(Chien);
-chien1.init("Crokdur", "mâtin de Naples", 75);
-chenil.push(chien1);
+var crokdur = Object.create(Chien);
+crokdur.init("Crokdur", "mâtin de Naples", 75);
+var pupuce = Object.create(Chien);
+pupuce.init("Pupuce", "bichon", 22);
+var medor = Object.create(Chien);
+medor.init("Médor", "labrador", 58);
+
+var chenil = [];
+chenil.push(crokdur);
+chenil.push(pupuce);
+chenil.push(medor);
+
+chenil.forEach(function (chien) {
+    console.log(chien.nom + " est un " + chien.race + " mesurant " + chien.taille + " cm. " +
+        "Il aboie : " + chien.aboyer());
+});
