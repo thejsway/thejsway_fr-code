@@ -3,11 +3,13 @@ Exercice : objets chiens
 */
 
 var Chien = {
+    // initialise les attributs du chien
     init: function (nom, race, taille) {
         this.nom = nom;
         this.race = race;
         this.taille = taille;
     },
+    // Renvoie l'aboiement du chien
     aboyer: function () {
         var aboiement = "Whoua ! Whoua !";
         if (this.taille < 25) {

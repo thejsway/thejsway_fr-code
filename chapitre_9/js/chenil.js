@@ -3,11 +3,13 @@ Exercice : gestion d'un chenil
 */
 
 var Chien = {
+    // initialise les attributs du chien
     init: function (nom, race, taille) {
         this.nom = nom;
         this.race = race;
         this.taille = taille;
     },
+    // Renvoie l'aboiement du chien
     aboyer: function () {
         var aboiement = "Whoua ! Whoua !";
         if (this.taille < 25) {
@@ -31,7 +33,7 @@ chenil.push(crokdur);
 chenil.push(pupuce);
 chenil.push(medor);
 
-console.log("Le chenil hégerge plusieurs chiens :");
+console.log("Le chenil hégerge " + chenil.length + " chien(s) :");
 chenil.forEach(function (chien) {
     console.log(chien.nom + " est un " + chien.race + " mesurant " + chien.taille + " cm. " +
         "Il aboie : " + chien.aboyer());
