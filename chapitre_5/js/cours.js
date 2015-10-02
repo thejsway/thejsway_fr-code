@@ -1,10 +1,10 @@
-function bonjour(prenom) {
+function direBonjour(prenom) {
     var message = "Bonjour, " + prenom + " !";
     return message;
 }
 
-console.log(bonjour("Baptiste"));
-console.log(bonjour("Sophie"));
+console.log(direBonjour("Baptiste"));
+console.log(direBonjour("Sophie"));
 
 function alpha() {
     console.log("Alpha");
