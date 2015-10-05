@@ -5,6 +5,7 @@ Exercice : afficher l'heure une seconde plus tard
 var heures = Number(prompt("Entrez les heures :"));
 var minutes = Number(prompt("Entrez les minutes :"));
 var secondes = Number(prompt("Entrez les secondes :"));
+
 // On teste tous les cas d'erreur
 if ((heures >= 0) && (heures <= 23) && (minutes >= 0) && (minutes <= 59) &&
     (secondes >= 0) && (secondes <= 59)) {
