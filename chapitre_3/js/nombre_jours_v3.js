@@ -2,13 +2,12 @@
 Exercice : afficher le nombre de jours d'un mois
 */
 
-var mois = prompt("Entrez le numéro d'un mois :");
+var mois = Number(prompt("Entrez le numéro d'un mois :"));
 
 /* Solution combinant if et switch.
 Le if initial permet d'éliminer tous les mois inconnus.
 Ensuite, la valeur par défaut de la variable nbJours permet d'économiser tous les tests
 des mois ayant 31 jours */
-mois = Number(mois);
 if ((mois >= 1) && (mois <= 12)) {
     var nbJours = 31;
     switch (mois) {

@@ -2,10 +2,8 @@
 Exercice : comparer deux nombres
 */
 
-var nombre1 = prompt("Entrez le nombre 1 :");
-nombre1 = Number(nombre1);
-var nombre2 = prompt("Entrez le nombre 2 :");
-nombre2 = Number(nombre2);
+var nombre1 = Number(prompt("Entrez le nombre 1 :"));
+var nombre2 = Number(prompt("Entrez le nombre 2 :"));
 if (nombre1 < nombre2) {
     console.log(nombre1 + " est plus petit que " + nombre2);
 } else if (nombre1 > nombre2) {

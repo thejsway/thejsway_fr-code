@@ -2,12 +2,9 @@
 Exercice : prévoir les valeurs finales des variables
 */
 
-var nb1 = prompt("Entrez nb1 :");
-nb1 = Number(nb1);
-var nb2 = prompt("Entrez nb2 :");
-nb2 = Number(nb2);
-var nb3 = prompt("Entrez nb3 :");
-nb3 = Number(nb3);
+var nb1 = Number(prompt("Entrez nb1 :"));
+var nb2 = Number(prompt("Entrez nb2 :"));
+var nb3 = Number(prompt("Entrez nb3 :"));
 
 if (nb1 > nb2) {
     nb1 = nb3 * 2;

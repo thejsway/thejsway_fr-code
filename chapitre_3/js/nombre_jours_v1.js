@@ -2,7 +2,7 @@
 Exercice : afficher le nombre de jours d'un mois
 */
 
-var mois = prompt("Entrez le numéro d'un mois :");
+var mois = Number(prompt("Entrez le numéro d'un mois :"));
 
 // Solution avec des if
 if (mois === 1 || mois === 3 || mois === 5 || mois === 7 || mois === 8 ||

@@ -30,7 +30,6 @@ h = Number("5");
 console.log(h + 1); // Addition numérique : affiche le nombre 6
 
 var nb = Number(prompt("Entrez un nombre : ")); // nb est de type nombre
-// ...
 
 var nb1 = 5.5;
 var nb2 = 3.14;

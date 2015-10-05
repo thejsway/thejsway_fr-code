@@ -2,14 +2,13 @@
 Exercice : afficher le nombre de jours d'un mois
 */
 
-var mois = prompt("Entrez le numéro d'un mois :");
+var mois = Number(prompt("Entrez le numéro d'un mois :"));
 
 /* Solution avec un switch.
 Notez l'absence d'instructions break dans certains case : on passe ainsi d'un cas
 à un autre pour tous les mois ayant le même nombre de jours, jusqu'à arriver au
 case qui affiche le message approprié et fait sortir du switch.
 On limite ainsi la duplication du message affiché dans le code */
-mois = Number(mois);
 switch (mois) {
 case 1:
 case 3:
