@@ -6,22 +6,6 @@ function direBonjour(prenom) {
 console.log(direBonjour("Baptiste"));
 console.log(direBonjour("Sophie"));
 
-function alpha() {
-    console.log("Alpha");
-    beta();
-}
-
-function beta() {
-    console.log("Beta");
-    gamma();
-}
-
-function gamma() {
-    console.log("Gamma");
-}
-
-alpha();
-
 function presentation(prenom, age) {
     console.log("Tu t'appelles " + prenom + " et tu as " + age + " ans");
 }

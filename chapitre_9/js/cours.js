@@ -5,7 +5,6 @@ var tab = ["Bonjour", 7, true];
 console.log(films.length); // Affiche 3
 
 var tableauVide = []; // Création d'un tableau vide
-
 console.log(tableauVide.length); // Affiche 0
 
 console.log(films[0]); // Affiche "Le loup de Wall Street"

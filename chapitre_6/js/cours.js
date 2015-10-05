@@ -41,8 +41,3 @@ console.log(prenom[4]);
 for (var i = 0; i < prenom.length; i++) {
     console.log(prenom[i]);
 }
-
-var album = "Boys don't cry";
-console.log(album.indexOf("y")); // Affiche 2
-console.log(album.indexOf("cry")); // Affiche 11
-console.log(album.indexOf("dry")); // Affiche -1 : aucun résultat trouvé
