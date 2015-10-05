@@ -12,6 +12,6 @@ function aire(rayon) {
     return Math.pow(rayon, 2) * Math.PI;
 }
 
-var r = prompt("Entrez le rayon d'un cercle :");
+var r = Number(prompt("Entrez le rayon d'un cercle :"));
 console.log("Son périmètre vaut " + perimetre(r));
 console.log("Son aire vaut " + aire(r));

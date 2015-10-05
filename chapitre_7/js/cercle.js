@@ -2,7 +2,7 @@
 Exercice : objet cercle
 */
 
-var r = prompt("Entrez le rayon d'un cercle :");
+var r = Number(prompt("Entrez le rayon d'un cercle :"));
 var cercle = {
     rayon: r,
 
