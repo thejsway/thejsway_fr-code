@@ -3,7 +3,7 @@ Exercice : liste de films
 */
 
 var Film = {
-    // Initialise les attributs du film
+    // Initialise le film
     init: function (titre, annee, realisateur) {
         this.titre = titre;
         this.annee = annee;

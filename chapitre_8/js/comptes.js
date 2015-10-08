@@ -3,7 +3,7 @@ Exercice : comptes bancaires
 */
 
 var CompteBancaire = {
-    // Initialise le compte
+    // Initialise le compte bancaire
     initCB: function (titulaire, solde) {
         this.titulaire = titulaire;
         this.solde = solde;

@@ -3,12 +3,12 @@ Mini-jeu de rôle
 */
 
 var Personnage = {
-    // Initialise les attributs du personnage
+    // Initialise le personnage
     initPerso: function (nom, sante, force) {
         this.nom = nom;
         this.sante = sante;
         this.force = force;
-        // L'inventaire est géré sous la forme d'un attribut de type objet
+        // L'inventaire est géré sous la forme d'une propriété de type objet
         this.inventaire = {
             or: 10,
             cles: 1
@@ -33,7 +33,7 @@ var Personnage = {
 };
 
 var Joueur = Object.create(Personnage);
-// Initialise les attributs du joueur
+// Initialise le joueur
 Joueur.initJoueur = function (nom, sante, force) {
     this.initPerso(nom, sante, force);
     this.xp = 0;
@@ -61,7 +61,7 @@ Joueur.combattre = function (adversaire) {
 };
 
 var Adversaire = Object.create(Personnage);
-// Initialise les attributs de l'adversaire
+// Initialise les propriétés de l'adversaire
 Adversaire.initAdversaire = function (nom, sante, force, race, valeur) {
     this.initPerso(nom, sante, force);
     this.race = race;

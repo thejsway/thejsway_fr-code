@@ -3,7 +3,7 @@ Exercice : objets chiens
 */
 
 var Chien = {
-    // initialise les attributs du chien
+    // initialise le chien
     init: function (nom, race, taille) {
         this.nom = nom;
         this.race = race;

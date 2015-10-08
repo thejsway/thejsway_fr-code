@@ -28,7 +28,7 @@ console.log(films[3]); // Affiche "Les Bronzés"
 var films = ["Le loup de Wall Street", 2013, "Vice-Versa", 2015, "Babysitting", 2013];
 
 var Film = {
-    // Initialise les attributs du film
+    // Initialise le film
     init: function (titre, annee) {
         this.titre = titre;
         this.annee = annee;
