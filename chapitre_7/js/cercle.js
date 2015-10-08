@@ -3,6 +3,7 @@ Exercice : objet cercle
 */
 
 var r = Number(prompt("Entrez le rayon d'un cercle :"));
+
 var cercle = {
     rayon: r,
 
@@ -12,7 +13,9 @@ var cercle = {
     },
     // Renvoie l'aire du cercle
     aire: function () {
-        return Math.pow(this.rayon, 2) * Math.PI;
+        return this.rayon * this.rayon * Math.PI;
+        // Autre possibilité
+        //return Math.pow(this.rayon, 2) * Math.PI;
     }
 };
 

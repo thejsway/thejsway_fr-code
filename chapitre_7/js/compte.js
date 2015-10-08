@@ -3,7 +3,7 @@ Exercice : compte bancaire
 */
 
 var compte = {
-    titulaire: "Jérôme",
+    titulaire: "Alex",
     solde: 0,
 
     // Crédite le compte d'un certain montant
@@ -25,7 +25,6 @@ var compte = {
 console.log(compte.decrire());
 var credit = Number(prompt("Entrez le montant à créditer :"));
 compte.crediter(credit);
-console.log(compte.decrire());
 var debit = Number(prompt("Entrez le montant à débiter :"));
 compte.debiter(debit);
 console.log(compte.decrire());
