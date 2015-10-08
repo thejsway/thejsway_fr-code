@@ -39,18 +39,19 @@ Joueur.decrire = function () {
         this.force + " en force et " + this.xp + " points d'expérience";
     return description;
 };
-Joueur.combattre = function (pnj) {
-    this.attaquer(pnj);
-    if (pnj.sante === 0) {
-        console.log(this.nom + " a tué " + pnj.nom + " et gagne " +
-            pnj.valeur + " points d'expérience");
-        this.xp += pnj.valeur;
+// Combat un adversaire
+Joueur.combattre = function (adversaire) {
+    this.attaquer(adversaire);
+    if (adversaire.sante === 0) {
+        console.log(this.nom + " a tué " + adversaire.nom + " et gagne " +
+            adversaire.valeur + " points d'expérience");
+        this.xp += adversaire.valeur;
     }
 };
 
-var PNJ = Object.create(Personnage);
-// Initialise les attributs du PNJ
-PNJ.initPNJ = function (nom, sante, force, race, valeur) {
+var Adversaire = Object.create(Personnage);
+// Initialise les attributs de l'adversaire
+Adversaire.initAdversaire = function (nom, sante, force, race, valeur) {
     this.initPerso(nom, sante, force);
     this.race = race;
     this.valeur = valeur;
@@ -66,8 +67,8 @@ console.log("Bienvenue dans ce jeu d'aventure ! Voici nos courageux héros :");
 console.log(joueur1.decrire());
 console.log(joueur2.decrire());
 
-var monstre = Object.create(PNJ);
-monstre.initPNJ("ZogZog", 40, 20, "orc", 10);
+var monstre = Object.create(Adversaire);
+monstre.initAdversaire("ZogZog", 40, 20, "orc", 10);
 
 console.log("Un affreux monstre arrive : c'est un " + monstre.race + " nommé " + monstre.nom);
 
