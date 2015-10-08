@@ -5,17 +5,17 @@ var mot = "Kangourou";
 var longueurMot = mot.length; // longueurMot contient la valeur 9
 console.log(longueurMot); // Affiche 9
 
-var chaine = "azerty";
-console.log(chaine === "azerty"); // Affiche true
-console.log(chaine === "qwerty"); // Affiche false
-
-console.log("Azerty" === "azerty"); // Affiche false à cause du A majuscule
-
 var motInitial = "Bora-Bora";
 var motEnMinuscules = motInitial.toLowerCase();
 console.log(motEnMinuscules); // Affiche "bora-bora"
 var motEnMajuscules = motInitial.toUpperCase();
 console.log(motEnMajuscules); // Affiche "BORA-BORA"
+
+var chaine = "azerty";
+console.log(chaine === "azerty"); // Affiche true
+console.log(chaine === "qwerty"); // Affiche false
+
+console.log("Azerty" === "azerty"); // Affiche false à cause du A majuscule
 
 var valeurSaisie = "Quitter";
 console.log(valeurSaisie === "quitter"); // Affiche false à cause du Q majuscule
