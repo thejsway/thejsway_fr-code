@@ -20,5 +20,5 @@ if (jour === "lundi") {
 } else if (jour === "dimanche") {
     console.log("Demain, nous serons lundi");
 } else {
-    console.log("Jour non reconnu !")
+    console.log("Jour non reconnu !");
 }
