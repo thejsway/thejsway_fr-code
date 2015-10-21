@@ -55,7 +55,7 @@ Joueur.combattre = function (adversaire) {
             adversaire.inventaire.cles + " clé(s)");
         this.xp += adversaire.valeur;
         // L'inventaire de la victime est transféré à son vainqueur
-        this.inventaire.or += adversaire.inventaire.or
+        this.inventaire.or += adversaire.inventaire.or;
         this.inventaire.cles += adversaire.inventaire.cles;
     }
 };
