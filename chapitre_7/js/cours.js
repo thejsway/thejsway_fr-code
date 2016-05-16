@@ -4,6 +4,14 @@ var stylo = {
     marque: "Bic"
 };
 
+// Constructeur MonObjet
+function MonObjet() {
+    // Initialisation de l'objet
+    // ...
+}
+// Instanciation d'un objet à partir du constructeur
+var monObj = new MonObjet();
+
 console.log(stylo.type); // Affiche "bille"
 console.log(stylo.couleur); // Affiche "bleu"
 console.log(stylo.marque); // Affiche "Bic"
