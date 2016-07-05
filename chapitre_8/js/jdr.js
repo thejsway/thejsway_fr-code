@@ -36,7 +36,7 @@ var Joueur = Object.create(Personnage);
 // Initialise le joueur
 Joueur.initJoueur = function (nom, sante, force) {
     this.initPerso(nom, sante, force);
-    this.xp = 0;
+    this.xp = 0; // L'expérience du joueur est toujours initialisée à 0
 };
 // Renvoie la description du joueur
 Joueur.decrire = function () {

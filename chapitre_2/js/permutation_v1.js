@@ -1,5 +1,5 @@
 /* 
-Exercice : inserver les valeurs des variables nombre1 et nombre2.
+Exercice : inverser les valeurs des variables nombre1 et nombre2.
 */
 
 var nombre1 = 5;
