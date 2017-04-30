@@ -17,7 +17,7 @@ if ((mois >= 1) && (mois <= 12)) {
     case 11:
         nbJours = 30;
         break;
-    case 2: // ou default
+    case 2:
         nbJours = 28;
         break;
     }
