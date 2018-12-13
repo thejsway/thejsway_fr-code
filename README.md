@@ -7,3 +7,6 @@ Code source associé au cours OpenClassrooms [Apprenez à coder avec JavaScript]
 - Chapitre 3 : "Ajoutez des conditions"
 - Chapitre 4 : "Répétez des instructions"
 - Chapitre 5 : "Modularisez votre code avec des fonctions"
+- Chapitre 6 : "Créez vos premiers objets"
+- Chapitre 7 : "Stockez vos données dans des tableaux"
+- Chapitre 8 : "Manipulez les chaînes de caractères"
