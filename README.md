@@ -10,3 +10,4 @@ Code source associé au cours OpenClassrooms [Apprenez à coder avec JavaScript]
 - Chapitre 6 : "Créez vos premiers objets"
 - Chapitre 7 : "Stockez vos données dans des tableaux"
 - Chapitre 8 : "Manipulez les chaînes de caractères"
+- Chapitre 9 : "Trop classe, la POO !"
