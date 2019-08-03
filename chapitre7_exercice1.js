@@ -14,7 +14,7 @@ mousquetaires.forEach(mousquetaire => {
 });
 
 mousquetaires.splice(2, 1);
-console.log("Le pauvre Aramie est mort...");
+console.log("Le pauvre Aramis est mort...");
 for (const mousquetaire of mousquetaires) {
   console.log(mousquetaire);
 }
