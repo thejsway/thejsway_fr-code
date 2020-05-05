@@ -1,6 +1,6 @@
-# Apprenez à coder avec JavaScript
+# La voie du JavaScript - Solutions des exercices
 
-Code source associé au cours OpenClassrooms [Apprenez à coder avec JavaScript](https://openclassrooms.com/courses/apprenez-a-coder-avec-javascript)
+Ce dépôt contient le code source des exercices proposés dans le livre [La voie du JavaScript](https://github.com/thejsway/thejsway_fr).
 
 - Chapitre 1 : "3, 2, 1... Codez !"
 - Chapitre 2 : "Jouez avec les variables"
